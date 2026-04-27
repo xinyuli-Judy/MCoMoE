@@ -1,5 +1,3 @@
-
-
 import os
 import random
 import argparse
@@ -15,9 +13,9 @@ from datetime import datetime
 import time  # 引入时间模块
 from torch.utils.tensorboard import SummaryWriter
 
-from utils.get_rnafm_feature99_new import *
-from utils.model_pair import get_model
-from utils.utils import read_csv, GradualWarmupScheduler
+from utils1.get_rnafm_feature99_new import *
+from utils1.model_pair import get_model
+from utils1.utils import read_csv, GradualWarmupScheduler
 
 # === 新增导入 precision_score ===
 from sklearn.metrics import roc_auc_score, average_precision_score, f1_score, matthews_corrcoef, precision_score
