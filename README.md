@@ -16,7 +16,7 @@ In-depth interpretability analyses verify the model’s biological plausibility.
 
 ## System Requirements
 ** MCoMoE mainly depends on the Python scientific stack
-
+```bash
 python = 3.8
 numpy = 1.24.2
 torch = 2.0.0+cu118
@@ -24,21 +24,21 @@ torch = 2.0.0+cu118
 
 ## Installation Guide
 
-\`\`\`bash
+```bash
 $ conda env create -f environment.yml 
-\`\`\`
+
 
 ## Usage
 
 Download the RNA-FM files at https://github.com/ml4bio/RNA-FM.
 Then, you can train a model with a certain RBP dataset using the following command:
-\`\`\`bash
+```bash
 python main.py --data_file  TIA1_HepG2 --data_path ./datasets_K562_HepG2 --train --RNAFM_model_path ./RNA-FM  --model_save_path  ./results
-\`\`\`
+
 After training, you can validate the model by using :
-\`\`\`bash
+```bash
 python main.py --data_file  TIA1_HepG2 --data_path ./datasets_K562_HepG2 --dynamic_validate --RNAFM_model_path ./RNA-FM  --model_save_path  ./results
-\`\`\`
+
 
 ## Data Availability
 
