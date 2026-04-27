@@ -21,12 +21,12 @@ python = 3.8
 numpy = 1.24.2
 torch = 2.0.0+cu118
 ...
-
+```
 ## Installation Guide
 
 ```bash
 $ conda env create -f environment.yml 
-
+```
 
 ## Usage
 
@@ -34,11 +34,11 @@ Download the RNA-FM files at https://github.com/ml4bio/RNA-FM.
 Then, you can train a model with a certain RBP dataset using the following command:
 ```bash
 python main.py --data_file  TIA1_HepG2 --data_path ./datasets_K562_HepG2 --train --RNAFM_model_path ./RNA-FM  --model_save_path  ./results
-
+```
 After training, you can validate the model by using :
 ```bash
 python main.py --data_file  TIA1_HepG2 --data_path ./datasets_K562_HepG2 --dynamic_validate --RNAFM_model_path ./RNA-FM  --model_save_path  ./results
-
+```
 
 ## Data Availability
 
