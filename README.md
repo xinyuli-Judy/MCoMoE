@@ -39,6 +39,7 @@ After training, you can validate the model by using :
 ```bash
 python main.py --data_file  TIA1_HepG2 --data_path ./datasets_K562_HepG2 --dynamic_validate --RNAFM_model_path ./RNA-FM  --model_save_path  ./results
 ```
+Note: It is necessary to first extract the sequence features and then save them to the feature_K562_HepG2 folder.
 
 ## Data Availability
 
